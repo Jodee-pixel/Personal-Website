@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Janae's hobbies: gaming, robotics, design, anime, and musicals.">
+    <title>Janae | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav class="top-nav">
-    <!-- unordered list -->
-      <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="About.html">About</a></li>
-       <li><a href="Portfolio.html">Portfolio</a></li>
-       <li><a href="Contact.html">Contact</a></li>
-   </ul> 
-</nav>
-<table>
-    <tr>
-        <th>Hobby</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>Gaming</td>
-        <td>I enjoy playing video games in my free time.</td>
-    </tr>
-    <tr>
-        <td>Robotics</td>
-        <td>I like building and programming robots.</td>
-    </tr>
-    <tr>
-        <td>Graphic Design</td>
-        <td>I create digital art and designs.</td>
-    </tr>
-    <tr>
-        <td>Watching Anime</td>
-        <td>I watch various anime series and movies.</td>
-    </tr>
-    <tr>
-        <td>Listening to Musicals</td>
-        <td>I enjoy listening to musical theater soundtracks.</td>
-    </tr>  
-    </table>
-    
-    <footer>
-        <p>&copy; 2026 janae's Page. All rights reserved.</p>
+    <header class="site-header">
+        <a class="site-name" href="index.html">Janae<span>.</span></a>
+        <nav class="top-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Portfolio.html" aria-current="page">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-intro" aria-labelledby="interests-title">
+            <p class="eyebrow">My interests</p>
+            <h1 id="interests-title">My hobbies</h1>
+            <p>Here are some things I like.</p>
+        </section>
+
+        <section class="interest-grid" aria-label="Hobby descriptions">
+            <article class="interest-card">
+                <span class="interest-icon" aria-hidden="true">🎮</span>
+                <h2>Gaming</h2>
+                <p>I like playing video games, especially Genshin Impact.</p>
+            </article>
+            <article class="interest-card">
+                <span class="interest-icon" aria-hidden="true">🤖</span>
+                <h2>Robotics</h2>
+                <p>I like making robots and writing code for them.</p>
+            </article>
+            <article class="interest-card">
+                <span class="interest-icon" aria-hidden="true">🎨</span>
+                <h2>Graphic design</h2>
+                <p>I make digital art and designs.</p>
+            </article>
+            <article class="interest-card">
+                <span class="interest-icon" aria-hidden="true">🍿</span>
+                <h2>Anime</h2>
+                <p>I like watching anime shows and movies.</p>
+            </article>
+            <article class="interest-card">
+                <span class="interest-icon" aria-hidden="true">🎭</span>
+                <h2>Musicals</h2>
+                <p>I like listening to songs from musicals.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Made with care by Janae</p>
+        <p>&copy; 2026 Janae's Page. All rights reserved.</p>
     </footer>
 </body>
 </html>

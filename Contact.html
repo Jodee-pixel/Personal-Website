@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Contact Janae by email or phone.">
+    <title>Janae | Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-       <nav class="top-nav">
-    <!-- unordered list -->
-      <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="About.html">About</a></li>
-       <li><a href="Portfolio.html">Portfolio</a></li>
-       <li><a href="Contact.html">Contact</a></li>
-   </ul> 
-</nav>
+    <header class="site-header">
+        <a class="site-name" href="index.html">Janae<span>.</span></a>
+        <nav class="top-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p>TO REACH ME CALL ME AT 123-456-7890 OR EMAIL ME AT janae@example.com</p>
-    
-    <footer>
-        <p>&copy; 2026 janae's Page. All rights reserved.</p>
+    <main class="page-main contact-main">
+        <section class="page-intro" aria-labelledby="contact-title">
+            <p class="eyebrow">Contact</p>
+            <h1 id="contact-title">Contact me</h1>
+            <p>Email or call me:</p>
+        </section>
+        <address class="contact-card">
+            <p><span class="contact-label">Email</span><a href="mailto:janae@example.com">janae@example.com</a></p>
+            <p><span class="contact-label">Phone</span><a href="tel:+11234567890">123-456-7890</a></p>
+        </address>
+    </main>
+
+    <footer class="site-footer">
+        <p>Made with care by Janae</p>
+        <p>&copy; 2026 Janae's Page. All rights reserved.</p>
     </footer>
 </body>
 </html>
