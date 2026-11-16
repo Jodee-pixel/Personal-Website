@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f3fa;
+    color: #292441;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #5c3cba;
+}
+
+/* Website name and menu */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-name {
+    color: #292441;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-name span {
+    color: #5c3cba;
+}
+
+.top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #292441;
+    text-decoration: none;
+}
+
+.top-nav a:hover,
+.top-nav a[aria-current="page"] {
+    background: white;
+    color: #5c3cba;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+.eyebrow {
+    color: #5c3cba;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Home page */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 24px;
+    background: white;
+}
+
+.hero-copy {
+    max-width: 520px;
+}
+
+.hero h1,
+.page-intro h1 {
+    font-size: 42px;
+}
+
+.hero-text,
+.page-intro > p:last-child,
+.feature-copy > p:not(.eyebrow),
+.interest-card p {
+    color: #706b80;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: #5c3cba;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-portrait {
+    margin: 0;
+    text-align: center;
+}
+
+.hero-portrait img {
+    width: 240px;
+    max-width: 100%;
+    border: 6px solid #f5f3fa;
+    border-radius: 50%;
+}
+
+figcaption {
+    color: #706b80;
+    font-size: 14px;
+}
+
+/* Hobby cards */
+.content-section {
+    padding: 45px 0;
+    text-align: center;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hobby-grid li,
+.interest-card,
+.contact-card p {
+    padding: 16px;
+    border: 1px solid #e8e3f2;
+    border-radius: 16px;
+    background: white;
+}
+
+.hobby-grid li span {
+    display: block;
+    font-size: 24px;
+}
+
+.text-link {
+    font-weight: bold;
+}
+
+/* Other pages */
+.page-main {
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+.page-intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.page-intro h1 {
+    margin-bottom: 12px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    border-radius: 20px;
+    background: white;
+}
+
+.feature-image {
+    flex: 1;
+    margin: 0;
+}
+
+.feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+.feature-copy {
+    flex: 1;
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.interest-icon {
+    font-size: 26px;
+}
+
+.interest-card h2 {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.interest-card p {
+    margin-bottom: 0;
+}
+
+/* Contact details */
+.contact-main {
+    min-height: 65vh;
+}
+
+.contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+    font-style: normal;
+}
+
+.contact-card p {
+    flex: 1;
+    min-width: 220px;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-label {
+    display: block;
+    color: #706b80;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #706b80;
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Tablet layout */
+@media (max-width: 760px) {
+    .hero,
+    .feature-card {
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phone layout */
+@media (max-width: 520px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-nav ul {
+        gap: 2px;
+    }
+
+    .top-nav a {
+        padding: 7px 9px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .hero,
+    .feature-card {
+        flex-direction: column;
+        padding: 22px;
+        text-align: center;
+    }
+
+    .hero h1,
+    .page-intro h1 {
+        font-size: 34px;
+    }
+
+    .hero-portrait img {
+        width: 200px;
+    }
+
+    .hobby-grid,
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-footer {
+        flex-direction: column;
+    }
+}
