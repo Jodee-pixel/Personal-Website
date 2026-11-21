@@ -6,6 +6,7 @@
     <meta name="description" content="Janae's hobbies: gaming, robotics, design, anime, and musicals.">
     <title>Janae | Portfolio</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -26,6 +27,12 @@
             <h1 id="interests-title">My hobbies</h1>
             <p>Here are some things I like.</p>
         </section>
+
+        <div class="filter-control">
+            <label for="hobby-search">Search my hobbies</label>
+            <input id="hobby-search" type="search" placeholder="Try “games” or “design”">
+            <p id="hobby-result-count" aria-live="polite">5 hobbies shown</p>
+        </div>
 
         <section class="interest-grid" aria-label="Hobby descriptions">
             <article class="interest-card">

@@ -6,6 +6,7 @@
     <meta name="description" content="Contact Janae by email or phone.">
     <title>Janae | Contact</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -30,6 +31,24 @@
             <p><span class="contact-label">Email</span><a href="mailto:janae@example.com">janae@example.com</a></p>
             <p><span class="contact-label">Phone</span><a href="tel:+11234567890">123-456-7890</a></p>
         </address>
+
+        <section class="message-section" aria-labelledby="message-title">
+            <h2 id="message-title">Leave a message</h2>
+            <form id="message-form" class="message-form">
+                <label for="visitor-name">Name</label>
+                <input id="visitor-name" name="name" type="text" required>
+
+                <label for="visitor-email">Email</label>
+                <input id="visitor-email" name="email" type="email" required>
+
+                <label for="visitor-message">Message</label>
+                <textarea id="visitor-message" name="message" rows="4" maxlength="300" required></textarea>
+                <p id="character-count">300 characters remaining</p>
+
+                <button class="button" type="submit">Preview message</button>
+            </form>
+            <div id="message-preview" class="message-preview" aria-live="polite" hidden></div>
+        </section>
     </main>
 
     <footer class="site-footer">

@@ -8,9 +8,18 @@ I gave each page a clearer layout and added the same menu to all four pages. My 
 
 Technologies
 
--HTML for the page content
--CSS for the colors, layout, and mobile styles
--Git and GitHub for saving and reviewing changes
+- HTML5 for the page content
+- CSS3 for colors, layout, themes, and mobile styles
+- JavaScript for interactivity and DOM manipulation
+- Git and GitHub for saving and reviewing changes
+
+JavaScript enhancements
+
+1. Dark and light mode: A theme button switches the whole website and saves the visitor's choice in local storage.
+2. Live date and time:The website displays the current local date and time and updates it every second.
+3. Hobby search: The portfolio page filters the hobby cards while the visitor types in the search box.
+4. Interactive FAQ:About-page FAQ buttons expand and collapse answers with accessible state updates.
+5. Contact message preview: The contact form retrieves visitor values, counts remaining message characters, and creates a preview dynamically.
 
 Project structure
 
@@ -27,6 +36,8 @@ assets/
     Janae.jpg
     emilie.jpg
     image.png
+  js/
+    script.js
 README.md
 ```
 
